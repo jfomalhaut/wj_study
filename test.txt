@@ -25,3 +25,5 @@ $ git commit -m "message"
 $ git push
 
 내용 추가
+
+HTML => CSS => Javascript(기능) => React
