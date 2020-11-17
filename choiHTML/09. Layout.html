@@ -1,0 +1,139 @@
+<html>
+<head>
+    <style>
+
+        * {  margin: 0; padding: 0; list-style: none; }
+
+        body {
+            background: #f0f0f0;
+        }
+        
+        header {
+            height: 350px;
+            background: yellowgreen;
+        }
+
+        .top {
+            height: 280px;
+            background: darkgreen;
+        }
+
+        .bottom {
+            height: 70px;
+            background: darkorange;
+        }
+        .innerTop{
+            width: 990px;
+            height: 280px;
+            background: olive;
+            margin: 0 auto;
+        }
+
+        .innerBottom {
+            width: 990px;
+            height: 70px;
+            background: pink;
+            margin: 0 auto;
+
+        }
+
+        .innerbottom ul {
+            height: 70px;
+            background: tomato;
+            float: left;
+        } 
+
+        .innerbottom ul li {
+            float: left;
+            font-size: 20px;
+            padding: 0 10px;
+            line-height: 70px;
+            background: yellow;
+            cursor: pointer;
+            user-select: none;
+            /* display: inline-block; */
+        }
+        
+        .innerBottom ul li:hover {
+            color : red;
+        }
+        .innerBottom ul li:active {
+            color : Blue;
+        }
+
+        .opt {
+            width: 200px;
+            height: 70px;
+            background: darkcyan;
+            float: right;
+        }
+
+
+        main {
+            min-height: calc(100vh - 350px - 20px);
+            width: 990px;
+            margin: 20px auto;
+            /* auto 생략가능 */
+            background: white;
+            /* 질문 */
+        }
+
+        .left {
+            width: 600px;
+            height: 500px;
+            background: skyBlue;
+            float: left;
+        }
+    
+        .right {
+            width: 370px;
+            height: 500px;
+            background: skyblue;
+            float: right;
+        }
+
+        .rightTop {
+            width: 370px;
+            height: 150px;
+            background: orange;
+            float: right;
+        }
+
+        .rightBottom {
+            width: 370px;
+            height: 330px;
+            background: lightgreen;
+            float: right;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="innerTop"></div>
+        </div>
+        <div class="bottom">
+            <div class="innerBottom">
+                <ul>
+                    <li>menu1</li>
+                    <li>menu2</li>
+                    <li>menu3</li>
+                    <li>menu4</li>
+                    <li>menu5</li>
+                    <li>menu6</li>
+                    <li>menu7</li>
+                </ul>
+                <div class="opt"></div>
+            </div>
+            </div>
+    </header>
+    <main>
+        <div class="left"></div>
+        <div class="right">
+            <div class="rightTop"></div>
+            <div class="rightBottom"></div>
+        </div>
+    </main>
+</body>
+</html>

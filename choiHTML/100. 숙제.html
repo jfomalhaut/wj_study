@@ -1,0 +1,106 @@
+<html>
+<head>
+    <style>
+
+        * {  margin: 0; padding: 0; list-style: none; }
+
+        header {
+            height: 50px;
+            background: darkgray;
+        }
+
+        ul {
+            height: 50px;
+            width: 300px;
+            background: darkgray;
+            float: right;
+        }
+
+        li {
+            float: right;
+            font-size: 15px;
+            line-height: 50px;
+            margin-left:10px;
+            padding: 0 10px;
+            background: lightgray;
+            cursor: pointer;
+        }
+
+        ul li:hover {
+            color : red;
+        }
+
+        ul li:active {
+            color : Blue;
+        }
+        
+        main {
+            background: darkgray;
+            height: calc(100vh - 50px)
+        }
+    
+        .innermain {
+            background: darkgray;
+            margin: 0 400px;
+            padding-top: 70px;    
+        }
+        
+        .logo {
+            background: darkgray;
+            font-size: 100px;
+            text-align: center;
+            color: white;
+        }
+
+        .box {
+            width: 467.2px;
+            font-size: 20px;
+            text-align: left;
+            margin-top: 30px;
+            background: white;
+            border: 1px solid black;
+        }
+
+        main ul {
+            width: 467.2px;
+            background: darkgray;
+        }
+
+        main li {
+            width: calc(100% / 5);
+            background: lightgray;
+            color: lightgray;
+            margin: 20px 0;    
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li>menu1</li>
+            <li>menu2</li>
+            <li>menu3</li>
+        </ul>
+    </header>    
+    <main>
+        <div class="innermain">
+            <div class="logo">Google</div>
+            <div class="box">Google 검색 또는 URL 입력<div>
+        </div>
+            <ul>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+                <li>1</li>
+            </ul>
+            <ul>
+                <li>2</li>
+                <li>2</li>
+                <li>2</li>
+                <li>2</li>
+                <li>2</li>
+            </ul>
+    </main>
+</body>
+</html>
