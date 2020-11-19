@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                /* flex-direction: column; */
+                /* 행열에 따라 다르게 적용됨(justify, align) */
+                height: 500px;
+                background: #f0f0f0;
+                justify-content: center;
+                justify-content: flex-start;
+                justify-content: flex-end;
+                justify-content: space-between;
+                justify-content: space-around;
+                justify-content: space-evenly;
+                align-items: center;
+                align-items: flex-end;
+                align-items: flex-start;            
+            }
+
+            .box {
+                width: 200px;
+                height: 100px;
+                background: tomato;
+            }
+
+            .box:nth-child(odd) {
+                background: yellowgreen;
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
