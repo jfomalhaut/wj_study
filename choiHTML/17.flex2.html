@@ -1,0 +1,32 @@
+<html>
+<head>
+    <style>
+        main {
+            display: flex;
+            height: 700px;
+        }
+        aside {
+            width: 250px;
+            flex-shrink: 0;
+            /* (줄어드는 것 방지) */
+            background: darkorange;
+        }
+        section {
+            flex-grow: 1;
+            flex-basis: 500px;
+            flex-shrink: 1;
+            /* (숫자가 높은 쪽이 많이 준다.) */
+            background: khaki;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <aside>456</aside>
+        <section></section>
+        <aside>123</aside>
+        <!-- flex는 왼쪽 부터 순서대로 쌓인다 -->
+    </main>
+
+</body>
+</html>

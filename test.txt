@@ -20,7 +20,7 @@ $ git clone https://github.com/jfomalhaut/wj_study.git
 $ git pull
 
 3. 업로드 (push)
-$ git add .
+$ git add 
 $ git commit -m "message"
 $ git push
 
