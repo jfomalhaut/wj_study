@@ -1,0 +1,60 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		header {
+			height: 150px;
+			background: gray;
+		}
+		footer {
+			height: 150px;
+			background: #444;
+		}
+		main {
+			height: calc(100vh - 150px * 2);
+			background: #fff;
+		}
+		aside {
+			width: 250px;
+			height: 100%;
+			background: yellowgreen;
+		}
+		aside.left {
+			float: left;
+		}
+		aside.right {
+			float: right;
+		}
+		article {
+			background: tomato;
+			width: calc(100% - 250px * 2);
+			height: 100%;
+			float: left;
+			padding: 30px;
+		}
+		.box {
+			width: calc((100% - 30px * 2) / 3);
+			height: 100%;
+			background: #f0f0f0;
+			margin-right: 30px;
+			float: left;
+		}
+		.box:last-child {
+			margin-right: 0;
+		}
+	</style>
+</head>
+<body>
+	<header></header>
+	<main>
+		<aside class="left"></aside>
+		<article>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</article>
+		<aside class="right"></aside>
+	</main>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<html>
+<head>
+	<style>
+		* { margin: 0; padding: 0; box-sizing: border-box; }
+		body {
+			background: #646464;
+		}
+		.innerMain {
+			width: 700px;
+			height: 500px;
+			/* background: white; */
+			margin: 200 auto 0;
+		}
+		h1 {
+			font-size: 100px;
+			color: white;
+			text-align: center;
+		}
+		.field input {
+			padding: 20px;
+			width: 100%;
+			border-radius: 15px;
+			border: none;
+			outline: none;
+			font-size: 20px;
+		}
+		.boxes {
+			margin: 20px 0;
+		}
+		.box {
+			width: calc((100% - 10px * 4) / 5);
+			height: 130px;
+			border-radius: 10px;
+			background: white;
+			float: left;
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		.box:nth-child(5n) {
+			margin-right: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="innerMain">
+		<h1>GOOGLE</h1>
+		<div class="field">
+			<input type="text" placeholder="검색어 및 URL을 입력하세요">
+		</div>
+		<div class="boxes">
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</div>
+</body>
+</html>
