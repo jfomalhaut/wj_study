@@ -1,0 +1,43 @@
+<html>
+<body>
+    <script>
+        var number = prompt('0 ~ 100까지의 숫자를 입력하세요') *1;
+        // console.log(number);
+
+        // var type = typeof(number);
+        // console.log(type);
+
+        // 조건문의 종류
+        // 1. if 문
+        // 2. SWITCH CASE 문
+
+
+        var result = number < 50; //boolen, true / fasle 로 출력
+        console.log(result);
+
+        //조건일경우에는  true / false
+
+        if (number >= 0 && number <= 100) {
+
+            if (number < 50) {
+                alert('입력하신 숫자는 50보다 작습니다');
+            } else if (number > 50) {
+                alert('입력하신 숫자는 50보다 큽니다');
+            } else if (number === 50) {
+                alert('입력하신 숫자는 50입니다');
+            } 
+            
+        } else {
+            alert('올바르지 않은 입력입니다');
+        }
+
+        // or = ||
+        
+        // == : type 확인 X
+        // === : type 까지 확인
+       
+
+
+    </script>
+</body>
+</html>

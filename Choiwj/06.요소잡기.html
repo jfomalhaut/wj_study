@@ -1,0 +1,33 @@
+<html>
+<body>
+    <h1>
+        <span>장바구니 : </span>
+        <b id="count" style="color: red;">0</b>
+        <button onclick="changeColor()">색깔 바꾸기</button>
+        <button onclick="addCount()">증가</button>
+    <h1>
+
+    <script>
+        var ea = 0;
+        var count = document.getElementById('count');
+        // console.log(count);
+        // count.style.color = 'blue';
+
+        function changeColor() {
+            count.style.color = 'blue';
+        }
+        
+        function addCount() {
+            ea = ea + 1; 
+            // ea++;
+            // ea += 1;
+            // console.log(ea);
+            count.innerHTML = ea;
+            count.innerHTML = '<span>' + ea + '</span>';
+            count.innerText = ea;
+        }
+        
+
+    </script>
+</body>
+</html>

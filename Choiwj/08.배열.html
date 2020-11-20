@@ -1,0 +1,45 @@
+<html>
+<body>
+    <script>
+        var friend = ['철수', '민수', '영수'];
+        var nums = [1, 2, 3, 4, 5, 6];
+
+        friend.push('경수');
+
+        // console.log(friend);
+
+        nums.push(7);
+
+        // console.log(nums);
+
+        // 뺄 때 : index를 알아야 한다.
+
+        var index = friend.indexOf('민수');
+        //없는사람 적을시 -1
+
+        friend.splice(index, 1);
+
+        console.log(friend);
+
+        // console.log(index);
+
+        // console.log(friend[1]);
+        // console.log(nums[4]);
+        // console.log(friend.length);
+        // console.log(nums.length);
+
+        var items = [
+            {id: 1, name : '상품', price:1000},
+            {id: 1, name : '상품', price:1000},
+            {id: 1, name : '상품', price:1000},
+            {id: 1, name : '상품', price:1000}
+        ];
+        //json(배열에 object를 쓰는 형태)
+        //object (정보를 담을수있음)
+
+        // array 는 배열 ()안은 칸
+
+        // []안은 index값
+    </script>
+</body>
+</html>
