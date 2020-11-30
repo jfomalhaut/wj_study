@@ -18,7 +18,13 @@
 		var cart = [];
 
 		function addCart(fruit) {
+			if (cart.indexOf(fruit) === -1) {
+				cart.push(fruit);
+			} else {
+				alert('이미 담겨있는 상품입니다');
+			}
 
+			console.log(cart);
 		}
 	</script>
 </body>
