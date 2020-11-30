@@ -1,0 +1,25 @@
+<html>
+<body>
+	<script>
+		var nf = new Intl.NumberFormat();
+		
+		var price = 1000000000;
+		var newPrice = nf.format(price);
+		
+
+
+
+		var newPrice2 = addWon(newPrice);
+		console.log(newPrice2);
+		
+		function addWon(num) {
+			return num + "원";
+		}
+
+		// function comma(num) {
+		// 	return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+		// }
+
+	</script>
+</body>
+</html>
