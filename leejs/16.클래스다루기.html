@@ -1,0 +1,37 @@
+<html>
+<head>
+	<style>
+		#box {
+			width: 200px;
+			height: 200px;
+			background: lightgray;
+		}
+
+		.red {
+			background: red !important;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="box"></div>
+	<button onclick="addClass()">빨강</button>
+	<button onclick="removeClass()">해제</button>
+
+	<script>
+		var box = document.getElementById('box');
+
+		function addClass() {
+			box.classList.add('red');
+		}
+
+		function removeClass() {
+			box.classList.remove('red');
+		}
+
+		// 빨강 : on, 회색: off 일 때,
+		// 버튼 하나로 on / off를 구현하시오.
+
+	</script>
+</body>
+</html>

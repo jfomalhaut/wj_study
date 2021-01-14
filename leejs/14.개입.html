@@ -1,0 +1,41 @@
+<html>
+<body>
+	<h1>
+		Count : 
+		<span id="count"></span>
+	</h1>
+	<button onclick="increase()">증가</button>
+	<button onclick="squared()">제곱</button>
+	<button onclick="changeColor('red')">색상변경(red)</button>
+	<button onclick="changeColor('blue')">색상변경(blue)</button>
+	<button onclick="changeColor('green')">색상변경(green)</button>
+	<button onclick="changeColor('orange')">색상변경(orange)</button>
+
+
+	<!-- ============================================================ -->
+
+	<script>
+		var count = 0;
+		// 개입(요소를 잡는 개입)
+		var countElement = document.getElementById('count');
+		// 개입(실질적으로 변화를 일으키는 개입)
+		countElement.innerHTML = count;
+		
+		function increase() {
+			count = count + 1;
+			countElement.innerHTML = count;
+		}
+
+		function squared() {
+			count = count * count;
+			countElement.innerHTML = count;
+			console.log(count);
+		}
+		
+		function changeColor(color) {
+			countElement.style.color = color;
+			// countElement.style.backgroundColor = color;
+		}
+	</script>
+</body>
+</html>
